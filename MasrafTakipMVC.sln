@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasrafTakipMVC", "MasrafTakipMVC\MasrafTakipMVC.csproj", "{F85669F8-F0F3-46EB-AB19-E3A93B6F780F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F85669F8-F0F3-46EB-AB19-E3A93B6F780F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F85669F8-F0F3-46EB-AB19-E3A93B6F780F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F85669F8-F0F3-46EB-AB19-E3A93B6F780F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F85669F8-F0F3-46EB-AB19-E3A93B6F780F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB84E761-E91C-4074-9E87-89D9F5208EC0}
+	EndGlobalSection
+EndGlobal

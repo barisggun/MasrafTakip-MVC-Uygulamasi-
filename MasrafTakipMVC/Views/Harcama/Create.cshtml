@@ -1,0 +1,67 @@
+﻿@model MasrafTakipMVC.Models.Harcama
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Yeni Harcama Oluştur</h1>
+
+<h4>Harcama</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div asp-validation-summary="All" class="text-danger"></div>
+          @*  <div class="form-group">
+                <label asp-for="Id" class="control-label"></label>
+                <input asp-for="Id" class="form-control" />
+                <span asp-validation-for="Id" class="text-danger"></span>
+            </div>*@
+
+            <div class="form-group">
+                <label asp-for="PersonelId" class="control-label"></label>
+                <select asp-for="PersonelId" class="form-control" asp-items="ViewBag.PersonelId"></select>
+                <span asp-validation-for="PersonelId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Tarihi" class="control-label"></label>
+                <input asp-for="Tarihi" class="form-control" />
+                <span asp-validation-for="Tarihi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FisNo" class="control-label"></label>
+                <input asp-for="FisNo" class="form-control" />
+                <span asp-validation-for="FisNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Notlar" class="control-label"></label>
+                <input asp-for="Notlar" class="form-control" />
+                <span asp-validation-for="Notlar" class="text-danger"></span>
+            </div>
+            @*<div class="form-group">
+                <label asp-for="Durumu" class="control-label"></label>
+                <select asp-for="Durumu" class="form-control" asp-items="ViewBag.Durumu"></select>
+                <span asp-validation-for="Durumu" class="text-danger"></span>
+            </div>*@
+
+            <div class="form-group">
+                <label asp-for="Durumu" class="control-label"></label>
+                 <select asp-for="Durumu" 
+                    class="form-control"
+                        asp-items="Html.GetEnumSelectList<Durumu>()"></select>
+            </div>
+
+            <div class="form-group mt-2">
+                <input type="submit" value="Oluştur" class="btn btn-primary" />
+                <a class="btn btn-secondary" asp-action="Index">Listeye Geri Dön</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
